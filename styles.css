@@ -1,0 +1,378 @@
+* {
+  background-color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container1 {
+  padding: 10px;
+  text-align: start;
+}
+
+header {
+  font-size: 60px;
+  padding: 20px 5px 20px 5px;
+  font-style: normal;
+  font-weight: bolder;
+  color: darkblue;
+  text-align: center;
+}
+
+.column1,
+.column2,
+.column3 {
+  float: left;
+  width: 30%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column1 h6 {
+  font-weight: lighter;
+  font-size: medium;
+  color: #686868;
+  padding: 0px;
+  margin-bottom: 0%;
+  margin-left: 30%;
+}
+
+.column1 p {
+  color: #003434;
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: justify;
+  margin-left: 30%;
+  margin-top: 2%;
+  margin-bottom: 0%;
+}
+
+.column1 button {
+  color: #f3ffff;
+  background-color: #003434;
+  padding: 15px 45px;
+  border: solid 1px;
+  border-radius: 25px;
+  margin-left: 30%;
+  margin-top: 10px;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.column1 button:hover {
+  background-color: #f3ffff;
+  color: #003434;
+}
+
+.column2 {
+  position: relative;
+  border-radius: 50px 0px;
+  height: 200px;
+  width: 400px;
+}
+
+.column2 img {
+  border-radius: 250px 0px;
+  height: 450px;
+  width: 400px;
+  background: linear-gradient(to right, #79dcf75d, #01ffee63);
+  display: inline-block;
+  margin: 0 5% 5% 5%;
+}
+
+.column3 {
+  margin-left: 2%;
+}
+
+.column3 h3 {
+  color: #003434;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.column3 pre {
+  color: #686868;
+  font-weight: normal;
+}
+
+.container2 {
+  background-color: #003434;
+  padding: 40px 20px;
+  border-radius: 50px;
+  text-align: center;
+  clear: both;
+  margin: 0px 200px 0px 200px;
+  position: relative;
+  top: 200px;
+  height: 350px;
+  width: auto;
+}
+
+.features-row1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: transparent;
+  width: auto;
+}
+
+.item {
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  position: relative;
+  top: -120px;
+  background-color: transparent;
+  color: rgb(151, 176, 183);
+  transition: transform 0.5s ease-in;
+  align-items: center;
+}
+
+.item h4,
+p {
+  background-color: transparent;
+}
+
+.item:hover {
+  transform: translateY(10px);
+}
+
+.item-img {
+  width: 80px;
+  height: 80px;
+  background-color: #c8effd;
+  border-radius: 50%;
+  color: rgb(0, 81, 89);
+}
+
+.container3 {
+  position: relative;
+  left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+  margin: 20px auto;
+  top: 200px;
+  width: calc(100% - 40px);
+  max-width: 1200px;
+}
+
+.features-row2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+
+.layout {
+  border-radius: 20px;
+  background-color: rgb(192, 240, 255);
+  text-align: left;
+  width: 250px;
+  height: 150px;
+  margin-bottom: 2%;
+}
+
+.layout-img {
+  position: relative;
+  width: 150px;
+}
+
+.layout-1 {
+  width: 40%;
+}
+
+.layout-1 h4,
+p {
+  font-size: 10px;
+  text-align: start;
+}
+
+.layout h4 {
+  background-color: transparent;
+  position: relative;
+  text-align: left;
+  left: 15px;
+}
+
+.layout a {
+  background-color: transparent;
+  position: relative;
+  text-align: left;
+  left: 15px;
+  bottom: -35px;
+  color: #0091a1;
+}
+
+.layout p {
+  text-align: left;
+  position: relative;
+  left: 15px;
+}
+
+.layout-7 {
+  width: 210px;
+  border-radius: 500px 0px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  background: #002f2f;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.footer h5,
+b,
+a {
+  background-color: transparent;
+  line-height: 2px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.footer-lyt {
+  position: relative;
+  left: 350px;
+  border-radius: 20px;
+  background-color: #006363;
+  text-align: center;
+  width: 250px;
+}
+
+.footer-lyt i {
+  padding: 10px;
+  font-size: 40px;
+  background-color: transparent;
+  color: whitesmoke;
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    width: auto;
+  }
+  .column1 {
+    position: static;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .column2 {
+    position: static;
+    width: auto;
+    margin-bottom: 50%;
+  }
+  .column3 {
+    position: relative;
+    width: 100%;
+    align-items: left;
+  }
+  .column3 h3 {
+    color: #003434;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 25px;
+  }
+
+  .column3 p {
+    text-align: left;
+    color: #686868;
+    font-weight: normal;
+  }
+
+  .container2 {
+    background-color: #003434;
+    padding: 40px 20px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 0px 20px 0px 20px;
+    position: relative;
+    top: 10px;
+    height: auto;
+    width: auto;
+  }
+
+  .features-row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+    width: auto;
+  }
+
+  .item {
+    position: static;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    background-color: transparent;
+    color: rgb(151, 176, 183);
+    transition: transform 0.3s ease;
+    align-items: center;
+  }
+
+  .item h4,
+  p {
+    background-color: transparent;
+  }
+
+  .container3 {
+    top: 10px;
+    width: 100px;
+    padding: 20px;
+    left: 10px;
+  }
+  .features-row2 {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .layout {
+    height: 200px;
+    width: 350px;
+  }
+
+  .layout-1 {
+    width: 60%;
+  }
+
+  .layout-1 h4,
+  p {
+    font-size: 20px;
+    text-align: start;
+  }
+  .layout a {
+    text-decoration: none;
+  }
+
+  .layout-7 {
+    display: none;
+  }
+
+  .footer {
+    margin-top: 1px;
+    border-radius: 10%;
+    padding: 50px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-lyt {
+    width: auto;
+    left: 10px;
+  }
+}
