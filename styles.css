@@ -258,12 +258,11 @@ a {
   color: whitesmoke;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    width: auto;
-
+    width: 100%;
   }
   .column1 {
     position: relative;
@@ -281,11 +280,12 @@ a {
     position: static;
     width: 100%;
     padding: 10px;
-    margin-bottom: 50%;
-    margin-bottom: 55%;
+    margin-bottom: 30%;
+    margin-top: 5%;
   }
   .column3 {
     position: relative;
+    top: 100px;
     width: 100%;
     padding: 10px;
     align-items: left;
@@ -311,9 +311,9 @@ a {
     text-align: center;
     margin: 10px auto;
     position: relative;
-    top: 10px;
+    top: 100px;
     height: auto;
-    width: auto;
+    width: 100%;
   }
 
   .features-row1 {
@@ -344,7 +344,7 @@ a {
   }
 
   .container3 {
-    top: 0;
+    top: 100px;
     width: 90%;
     margin: 10px auto;
     padding: 20px;
@@ -380,7 +380,8 @@ a {
   }
 
   .footer {
-    margin-top: 1px;
+    margin-top: 100px;
+    width: 100%;
     padding: 50px;
     flex-direction: column;
     gap: 40px;
