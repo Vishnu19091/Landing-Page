@@ -280,8 +280,8 @@ a {
     position: static;
     width: 100%;
     padding: 10px;
-    margin-bottom: 30%;
-    margin-top: 5%;
+    margin-bottom: 40%;
+    margin-top: 10%;
   }
   .column3 {
     position: relative;
@@ -307,11 +307,9 @@ a {
   .container2 {
     background-color: #003434;
     padding: 20px;
-    border-radius: 0px;
     text-align: center;
-    margin: 10px auto;
     position: relative;
-    top: 100px;
+    left: -150px;
     height: auto;
     width: 100%;
   }
@@ -323,14 +321,14 @@ a {
     align-items: center;
     flex-direction: column;
     background-color: transparent;
-    width: auto;
+    width: 100%;
     gap: 20px;
   }
 
   .item {
     position: static;
     padding: 15px;
-    width: 90%;
+    width: 100%;
     text-align: center;
     background-color: transparent;
     color: rgb(151, 176, 183);
@@ -344,8 +342,8 @@ a {
   }
 
   .container3 {
-    top: 100px;
-    width: 90%;
+    top: 220px;
+    width: 100%;
     margin: 10px auto;
     padding: 20px;
     left: 10px;
@@ -380,13 +378,12 @@ a {
   }
 
   .footer {
-    margin-top: 100px;
+    margin-top: 200px;
     width: 100%;
     padding: 50px;
     flex-direction: column;
     gap: 40px;
     display: flex;
-    flex-direction: column;
   }
 
   .footer-lyt {
