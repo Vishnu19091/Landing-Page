@@ -5,29 +5,30 @@ body {
 }
 
 .container1 {
-  padding: 10px;
-  text-align: start;
+  margin: 0;
+  text-align: center;
   background-color: rgb(219, 245, 255);
   height: 610px;
 }
 
-header {
-  font-size: 60px;
-  padding: 20px 5px 20px 5px;
-  font-style: normal;
-  font-weight: bolder;
-  color: darkblue;
-  text-align: center;
+.flex-box {
+  display: flex;
+  margin-top: 3%;
+  gap: 20px;
+  justify-content: space-around;
 }
 
-.column1,
-.column2,
-.column3 {
-  float: left;
-  width: 30%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
+header {
+  position: relative;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bolder;
+  color: darkblue;
+}
+
+.column1 {
+  align-self: center;
+  flex-basis: 300px;
 }
 
 .column1 h6 {
@@ -35,8 +36,7 @@ header {
   font-size: medium;
   color: #686868;
   padding: 0px;
-  margin-bottom: 0%;
-  margin-left: 30%;
+  margin: 0 auto;
 }
 
 .column1 p {
@@ -44,9 +44,7 @@ header {
   font-weight: bolder;
   font-size: 25px;
   text-align: justify;
-  margin-left: 30%;
-  margin-top: 2%;
-  margin-bottom: 0%;
+  margin: 0 auto;
 }
 
 .column1 button {
@@ -55,8 +53,7 @@ header {
   padding: 15px 45px;
   border: solid 1px;
   border-radius: 25px;
-  margin-left: 30%;
-  margin-top: 10px;
+  margin: 0 auto;
   transition: 0.5s;
   transition-timing-function: ease-in-out;
 }
@@ -67,10 +64,8 @@ header {
 }
 
 .column2 {
-  position: relative;
   border-radius: 50px 0px;
-  height: 200px;
-  width: 400px;
+  align-self: center;
 }
 
 .column2 img {
@@ -79,17 +74,19 @@ header {
   width: 400px;
   background: linear-gradient(to right, #79dcf75d, #01ffee63);
   display: inline-block;
-  margin: 0 5% 5% 5%;
+  margin: 0 auto;
 }
 
 .column3 {
-  margin-left: 2%;
+  flex-basis: 300px;
+  align-self: center;
 }
 
 .column3 h3 {
   color: #003434;
   font-weight: bolder;
   font-size: 25px;
+  text-align: start;
 }
 
 .column3 pre {
@@ -99,14 +96,13 @@ header {
 
 .container2 {
   background-color: #003434;
-  padding: 40px 20px;
+  padding: 40px;
   border-radius: 50px;
   text-align: center;
-  clear: both;
-  margin: 0px 200px 0px 200px;
+  margin: 0px 200px;
   position: relative;
   top: 100px;
-  height: 350px;
+  height: 300px;
   width: auto;
 }
 
@@ -114,26 +110,19 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
-  background-color: transparent;
-  width: auto;
+  width: 100%;
+  position: relative;
+  top: -120px;
 }
 
 .item {
   padding: 20px;
   width: 250px;
   text-align: center;
-  position: relative;
-  top: -120px;
   background-color: transparent;
   color: rgb(151, 176, 183);
   transition: transform 0.5s ease-in;
   align-items: center;
-}
-
-.item h4,
-p {
-  background-color: transparent;
 }
 
 .item:hover {
@@ -150,25 +139,15 @@ p {
 
 .container3 {
   position: relative;
-  left: 100px;
-  top: 90px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 20px;
-  text-align: center;
-  margin: 20px auto;
-  width: calc(100% - 40px);
+  margin: 0 auto;
+  top: 180px;
   max-width: 1200px;
 }
 
 .features-row2 {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: flex-start;
-  background-color: transparent;
+  justify-content: space-evenly;
 }
 
 .layout {
@@ -177,7 +156,8 @@ p {
   text-align: left;
   width: 250px;
   height: 150px;
-  margin-bottom: 2%;
+  margin-bottom: 15px;
+  padding: 0px 0px 0px 5px;
 }
 
 .layout-img {
@@ -198,8 +178,8 @@ p {
 .layout h4 {
   background-color: transparent;
   position: relative;
-  text-align: left;
   left: 15px;
+  margin: 1;
 }
 
 .layout a {
@@ -212,31 +192,30 @@ p {
 }
 
 .layout p {
-  text-align: left;
   position: relative;
   left: 15px;
 }
 
 .layout-7 {
-  width: 210px;
+  flex-basis: 200px;
   border-radius: 500px 0px;
 }
 
 .footer {
+  margin: 0;
   padding: 20px;
-  text-align: center;
   position: relative;
   background: #002f2f;
-  margin-top: 80px;
+  top: 250px;
   display: flex;
   flex-direction: row;
   gap: 20px;
+  justify-content: center;
 }
 
 .footer h5,
 b,
 a {
-  background-color: transparent;
   line-height: 2px;
   color: #ffffff;
   text-decoration: none;
@@ -244,12 +223,10 @@ a {
 }
 
 .footer-lyt {
-  position: relative;
-  left: 350px;
   border-radius: 20px;
   background-color: #006363;
   text-align: center;
-  width: 250px;
+  flex: 0 0 250px;
 }
 
 .footer-lyt i {
@@ -259,7 +236,7 @@ a {
   color: whitesmoke;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   body {
     margin: 0 auto;
     padding: 0;
@@ -267,34 +244,31 @@ a {
   }
 
   .container1 {
-    background-color: transparent;
+    margin: 0 auto;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .flex-box {
+    display: flex;
+    margin-top: 3%;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 50px;
   }
 
   .column1 {
-    position: relative;
-    top: 0;
-    left: -50px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    bottom: 50px;
+    flex: 0 0 auto;
+    align-self: center;
   }
 
   .column2 {
-    position: static;
-    width: 100%;
     padding: 10px;
-    margin-bottom: 40%;
-    margin-top: 10%;
+    align-self: center;
   }
   .column3 {
-    position: relative;
-    top: 100px;
-    width: 100%;
     padding: 10px;
-    align-items: left;
+    align-self: center;
   }
   .column3 h3 {
     color: #003434;
@@ -312,30 +286,27 @@ a {
 
   .container2 {
     background-color: #003434;
-    padding: 20px;
     border-radius: 0px;
-    text-align: center;
     position: relative;
+    top: 100px;
     margin: 0 auto;
     height: auto;
-    width: 100%;
+    width: auto;
   }
 
   .features-row1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
     flex-direction: column;
-    background-color: transparent;
     width: 100%;
     gap: 20px;
+    top: 0;
   }
 
   .item {
-    position: static;
-    padding: 15px;
-    width: 100%;
+    width: auto;
+    padding: 0;
     text-align: center;
     background-color: transparent;
     color: rgb(151, 176, 183);
@@ -349,12 +320,13 @@ a {
   }
 
   .container3 {
-    top: 100px;
-    width: 100%;
-    padding: 20px;
-    left: 10px;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
   }
   .features-row2 {
+    display: flex;
+    width: auto;
     flex-direction: column;
     gap: 20px;
   }
@@ -362,10 +334,14 @@ a {
   .layout {
     height: 200px;
     width: 100%;
+    border-radius: 0;
+    margin: 0 auto;
   }
 
   .layout-1 {
     width: 100%;
+    margin: 0 auto;
+    align-self: flex-start;
   }
 
   .layout-1 h4,
@@ -384,17 +360,16 @@ a {
   }
 
   .footer {
-    margin-top: 100px;
-    width: 100%;
+    margin: 0 auto;
     padding: 50px;
+    display: flex;
     flex-direction: column;
     gap: 40px;
-    display: flex;
   }
 
   .footer-lyt {
-    width: 100%;
-    left: 10px;
+    flex: 1;
     text-align: center;
+    padding: 15px;
   }
 }
